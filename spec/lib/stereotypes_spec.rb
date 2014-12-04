@@ -26,3 +26,12 @@ describe Kiwi do
     end
   end
 end
+
+describe Irish do
+  describe "#description" do
+    it 'describes that they say Top \'o the morning!"' do
+      person = Irish.new
+      expect(person.description).to eq('When an Irish person greets you, they say "Top o\' the morning!"')
+    end
+  end
+end
